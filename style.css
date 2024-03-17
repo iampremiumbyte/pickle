@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #A99414;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-right: 1em;
+}
+
+.tokenomics {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    text-align: center;
+}
+
+.tokenomics h3 {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    img {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin-left: 2em;
+    }
+
+    .tokenomics {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .tokenomics h3 {
+        font-size: 1em !important;
+    }
+
+    .tokenomics h4 {
+        font-size: .9em;
+    }
+}
